@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>How to Append HTML Code to a Div using Javascript</title>
+	<style>
+		body {
+			text-align: center;
+			padding: 5%;
+		}
+	h1{
+		color: green
+		}
+	</style>
+</head>
+
+<body>
+	<div id="add_to_me">
+		<h1>GeeksforGeeks</h1>
+		<div id="add_after_me">
+
+	</div>
+
+
+        <br>
+    <button onclick="addCode()">Add Stuff</button>
+	<script>
+        
+
+
+		function addCode() {
+            let number = 5660;
+             for (let i = 0; i < 10; i++) {
+                document.getElementById("add_to_me").insertAdjacentHTML("afterend",
+				`<h3>This is the text which has been inserted by JS</h3><button>${number}</button>`);
+                
+            }
+			
+		}
+	</script>
+</body>
+
+</html>
